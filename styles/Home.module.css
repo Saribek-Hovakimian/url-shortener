@@ -1,22 +1,17 @@
 .container {
   padding: 0 2rem;
+  height: 100vh;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.hero {
+  padding: 4rem 0rem;
 }
 
 .footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  /* border-top: 1px solid #eaeaea; */
   justify-content: center;
   align-items: center;
 }
@@ -39,16 +34,39 @@
   text-decoration: underline;
 }
 
-.title {
+.title, .subHeader {
   margin: 0;
+  padding: 0.5rem 0;
   line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+  font-size: 3.5rem;
   text-align: center;
 }
+
+.subHeader {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.inputBoxes {
+  margin: 2rem 0 1rem;
+}
+
+.shortenButton {
+  margin-top: 1rem;
+}
+
+.highlight {
+  color: #9457eb;
+}
+
+.highlightUnderline {
+  text-decoration-color: #9457eb;
+}
+
+/* .title,
+.description {
+  text-align: center;
+} */
 
 .description {
   margin: 4rem 0;
@@ -112,5 +130,17 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .heroCTA {
+    padding-top: 4rem;
+  }
+  .title, .subHeader {
+    text-align: start;
+  }
+  .inputBoxes {
+    width: 50%;
   }
 }
