@@ -163,7 +163,7 @@ export default function Home() {
                   </ShortenButton>
 
                   {loading &&
-                    <Stack direction="row" justifyContent="center">                    >
+                    <Stack direction="row" justifyContent="center">
                       <CircularProgress className={styles.progress} />
                     </Stack>
                   }
