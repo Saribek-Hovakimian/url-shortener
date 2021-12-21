@@ -8,8 +8,8 @@
     "lint": "next lint",
     "cy:open-only": "cypress open",
     "cy:run-only": "cypress run",
-    "cy:open": "start-server-and-test dev 8000 cy:open-only",
-    "cy:run": "start-server-and-test dev 8000 cy:run-only"
+    "cy:open": "start-server-and-test dev 8080 cy:open-only",
+    "cy:run": "start-server-and-test dev 8080 cy:run-only"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
