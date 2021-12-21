@@ -112,7 +112,7 @@ export default function Home() {
       <main className={styles.container}>
         <Container maxWidth="lg" className={styles.hero}>
           <Grid container>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={8} lg={6}>
               <div className={styles.heroCTA}>
                 <h1 className={styles.title}>
                   <span className={styles.highlight}>Shorten</span> Ugly Links
@@ -122,6 +122,7 @@ export default function Home() {
                 </h2>
                 <form className={styles.inputSection} onSubmit={handleSubmit}>
                   <HeroTextField 
+                    id="originalLinkInput"
                     label="Old Ugly Link" 
                     variant="outlined" 
                     fullWidth
@@ -137,6 +138,7 @@ export default function Home() {
                     required
                   />
                   <HeroTextField 
+                    id="customPathInput"
                     label="New Short Link" 
                     variant="outlined" 
                     fullWidth
@@ -154,6 +156,7 @@ export default function Home() {
                     required
                   />
                   <ShortenButton 
+                    id="shortenButton"
                     className={styles.shortenButton} 
                     variant="contained" 
                     fullWidth
@@ -170,6 +173,7 @@ export default function Home() {
 
                   {(finalLink || error) && 
                     <Alert
+                      id={error ? "errorAlert" : "successAlert"}
                       className={styles.alert}
                       severity={error ? "error" : "success"}
                       action={
@@ -189,7 +193,7 @@ export default function Home() {
                 </form>
               </div>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={4} lg={6}>
               <div>
                 {/* <a href="https://lottiefiles.com/79780-website"> */}
                   <Lottie 
