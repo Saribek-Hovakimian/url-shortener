@@ -1,3 +1,7 @@
+let goodLink1 = "https://docs.cypress.io/guides/references/roadmap"
+let goodPath1 = "roadmap"
+let badLink1 = "hello"
+
 describe('The Home Page Structure', () => {
     beforeEach(() => {
         cy.visit('/')
@@ -18,10 +22,6 @@ describe('Input Handling', () => {
     beforeEach(() => {
         cy.visit('/')
     })
-
-    let goodLink1 = "https://docs.cypress.io/guides/references/roadmap"
-    let goodPath1 = "roadmap"
-    let badLink1 = "hello"
 
     it('empty inputs', () => {
         cy.get("#shortenButton").click()
