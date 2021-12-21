@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head'
 import Lottie from "lottie-react";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { isValidURL } from "../helpers/patterns";
+import { isValidURL } from "../lib/patterns";
 import axios from "axios";
 
 import styles from '../styles/Home.module.css'
@@ -58,7 +58,7 @@ export default function Home() {
     setLoading(true);
 
     if(await isValid()) {
-      let data = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/link/new`, {
+      let data = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/links`, {
           customPath: customPath,
           originalLink: originalLink,
         })
