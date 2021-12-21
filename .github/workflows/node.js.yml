@@ -26,6 +26,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
+      env:
+        MONGODB_URI: ${{ secrets.MONGODB_URI }}
     - run: yarn install
     - run: yarn build
     - run: yarn cy:run
