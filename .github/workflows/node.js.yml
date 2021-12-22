@@ -31,3 +31,5 @@ jobs:
       env:
         MONGODB_URI: ${{ secrets.MONGODB_URI }}
     - run: yarn cy:run
+      env:
+        MONGODB_URI: ${{ secrets.MONGODB_URI }}
