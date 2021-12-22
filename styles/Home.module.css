@@ -57,9 +57,9 @@
 }
 
 .example {
-  font-size: 1.15rem;
-  font-weight: lighter;
-  margin-bottom: 0.3rem;
+  font-size: 1.15rem !important;
+  font-weight: lighter !important;
+  margin-bottom: 0.3rem !important;
 }
 
 .heroExample {
