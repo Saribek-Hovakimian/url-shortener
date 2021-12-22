@@ -16,6 +16,7 @@ import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import CircularProgress from '@mui/material/CircularProgress';
 import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 
 import heroAnimation from "../public/assets/79780-website.json";
 
@@ -121,6 +122,12 @@ export default function Home() {
                   Customize & Share <u className={styles.highlightUnderline}>Anywhere</u>
                 </h2>
                 <form className={styles.inputSection} onSubmit={handleSubmit}>
+                  <div className={styles.heroExample}>
+                    <Typography variant='h3' className={styles.example}>Example</Typography>
+                    <Typography noWrap variant="body2" color="primary" className='exampleText' sx={{ fontStyle: "italic", fontWeight: "lighter" }}><span style={{ color: "black" }}>Ugly:</span> https://www.allrecipes.com/recipe/255038/fajitas-pan-seared</Typography>
+                    <Typography noWrap variant="body2" className='exampleText' sx={{ color: "green", marginBottom: "1rem", fontStyle: "italic", fontWeight: "lighter" }}><span style={{ color: "black" }}>New:</span> {process.env.NEXT_PUBLIC_CLIENT_URL}/fajitas</Typography>
+                  </div>
+                  
                   <HeroTextField 
                     id="originalLinkInput"
                     label="Old Ugly Link" 

@@ -56,6 +56,16 @@
   margin-top: 1rem !important;
 }
 
+.example {
+  font-size: 1.15rem;
+  font-weight: lighter;
+  margin-bottom: 0.3rem;
+}
+
+.heroExample {
+  margin-bottom: 1.5rem;
+}
+
 .alert {
   margin-top: 1rem;
 }
