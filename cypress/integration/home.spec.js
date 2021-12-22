@@ -1,6 +1,8 @@
 let goodLink1 = "https://docs.cypress.io/guides/references/roadmap"
 let goodPath1 = "roadmap"
+let goodLink2 = "https://www.google.com/search?q=url+shortener&oq=google+u&aqs=chrome.0.69i59j69i60l3j0j69i57.1069j0j7&sourceid=chrome&ie=UTF-8"
 let badLink1 = "hello"
+let badLink2 = "https://docs. cypress.io/guides/references/roadmap"
 
 describe('The Home Page Structure', () => {
     beforeEach(() => {
@@ -44,6 +46,13 @@ describe('Input Handling', () => {
 
     it('bad original link 1', () => {
         cy.get("#originalLinkInput").type(badLink1)
+        cy.get("#customPathInput").type(goodPath1)
+        cy.get("#shortenButton").click()
+        cy.get("#errorAlert").should("exist")
+    })
+
+    it('bad original link 2', () => {
+        cy.get("#originalLinkInput").type(badLink2)
         cy.get("#customPathInput").type(goodPath1)
         cy.get("#shortenButton").click()
         cy.get("#errorAlert").should("exist")
