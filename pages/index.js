@@ -144,7 +144,7 @@ export default function Home() {
                     fullWidth
                     margin='dense'
                     InputProps={{
-                      startAdornment: <InputAdornment position="start">{`${process.env.NEXT_PUBLIC_CLIENT_URL}/`}</InputAdornment>,
+                      startAdornment: <InputAdornment position="start">{`${process.env.NEXT_PUBLIC_CLIENT_SHORT_URL}/`}</InputAdornment>,
                     }}
                     placeholder='type here...'
                     value={customPath}
