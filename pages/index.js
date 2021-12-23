@@ -125,7 +125,7 @@ export default function Home() {
                   <div className={styles.heroExample}>
                     <Typography variant='h3' className={styles.example}>Example</Typography>
                     <Typography noWrap variant="body2" color="primary" className='exampleText' sx={{ fontStyle: "italic", fontWeight: "lighter" }}><span style={{ color: "black" }}>Ugly:</span> https://www.allrecipes.com/recipe/255038/fajitas-pan-seared</Typography>
-                    <Typography noWrap variant="body2" className='exampleText' sx={{ color: "green", marginBottom: "1rem", fontStyle: "italic", fontWeight: "lighter" }}><span style={{ color: "black" }}>New:</span> {process.env.NEXT_PUBLIC_CLIENT_URL}/fajitas</Typography>
+                    <Typography noWrap variant="body2" className='exampleText' sx={{ color: "green", marginBottom: "1rem", fontStyle: "italic", fontWeight: "lighter" }}><span style={{ color: "black" }}>New:</span> {process.env.NEXT_PUBLIC_CLIENT_URL}/recipe</Typography>
                   </div>
                   
                   <HeroTextField 
