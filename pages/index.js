@@ -135,7 +135,7 @@ export default function Home() {
                     fullWidth
                     margin='dense'
                     placeholder='Paste ugly link here...'
-                    autoFocus
+                    focused
                     value={originalLink}
                     onChange={(event) => {
                       setOriginalLink(event.target.value);
