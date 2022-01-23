@@ -17,6 +17,7 @@ import Alert from '@mui/material/Alert';
 import CircularProgress from '@mui/material/CircularProgress';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 import heroAnimation from "../public/assets/79780-website.json";
 
@@ -215,7 +216,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        Made with ❤️ in Atlanta, GA
+        Made with <span><FavoriteIcon fontSize="small" sx={{ color: "red", mx: "3px" }} /></span> in Atlanta, GA
       </footer>
       
       <Snackbar
